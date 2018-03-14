@@ -11,11 +11,11 @@ from aide_design.play import*
 #### Question 1
 1. Calculate the mass of sodium sulfite needed to reduce all the dissolved oxygen in 4 L of pure water in equilibrium with the atmosphere and at 30 deg C.
 
-The mass of sodium sulfite necessary can be determined by stoichiometry.
+The mass of sodium sulfite necessary can be determined by stoichiometry:
 
 $$4L H_2O * \frac{7.7mg O_2}{L}* \frac{1 mol O_2}{32000 mg O_2}* \frac{2 mol Na_2SO_3}{1 mol O_22}* \frac{126000mg Na_2SO_3}{1 mol Na_2SO_3}$$
 
-where 7.7 $mg/L$ is the amount of dissolved oxygen water can hold at 30 $^{\circ}$ C.
+where 7.7 $\frac{mg O_2}{L}$ is the amount of dissolved oxygen water can hold at 30 $^{\circ}$ C.
 
 ```python
 mass_sodium_sulfite = (4*7.7*2*126000)/(32000) * (u.mg)
